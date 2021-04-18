@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TnM_Flows_Regression_Suite" parallel="false" preserve-order="true" thread-count = "1">
+  <test name="EXP_Actions">
+    <classes>
+      <class name="expOActions_US_main.CI_Exp_CreateReq_AddResponses_Test"/>
+    </classes>
+  </test> <!-- EXP_Actions -->
+  
+  <test name="Advanced_Search">
+    <classes>
+      <class name="AdvancedSearch_US_main.AdvancedSearch_main_Green_Test"/>
+    </classes>
+  </test> <!-- Advanced_Search -->
+
+   <test name="ShakeDownTest" >
+    <classes >
+      <class name="shakeDown_US_main.Shakedown_CreateReq_AddResp_Test"/>
+    </classes>
+  </test> <!-- ShakeDownTest -->
+  
+   <test name="GpsgTest" >
+    <classes >
+      <class name="gPSG_DE_Main.CI_Gpsg_CreateRequest_AddResponse_Test"/>
+    </classes>
+  </test> <!-- GpsgTest -->
+  
+  <test name="nonPriced" >
+    <classes >
+      <class name="nonPriced_US_main.CI_NonPriced_CreateReq_AddResp_Test"/>
+    </classes>
+  </test> <!-- nonPriced -->
+  
+  <test name="FlowDown" >
+    <classes >
+      <class name="FlowDownTermsReview_Main_US.CI_FlowDown_CreateRequest_AddResponse_Test"/>
+    </classes>
+  </test> <!-- FlowDown -->
+  
+   <test name="RDM" >
+    <classes >
+      <class name="rDM_US_Main.CI_FlowDown_Createreq_Addres_Sub_Ass_RDM_Test"/>
+    </classes>
+  </test> <!-- RDM -->
+  
+   <test name="Referral" >
+    <classes >
+      <class name="rEFERRAL_US_Main.Referral_Req_Creation_Add_Response_Test"/>
+    </classes>
+  </test> <!-- Referral -->
+  
+   <test name="Feedback" >
+    <classes >
+      <class name="fEEDBACK_US_Main.Createreq_Feedback_Submit_Test"/>
+    </classes>
+  </test> <!-- Feedback -->
+  
+</suite> <!-- TnM_Flows_Regression_Suite -->

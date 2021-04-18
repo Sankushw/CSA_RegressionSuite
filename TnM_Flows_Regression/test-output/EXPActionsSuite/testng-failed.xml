@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [EXPActionsSuite]">
+  <test name="EXPActionsTest(failed)">
+    <classes>
+      <class name="expOActions_US_main.CI_CreateReq_AddResponses_Test">
+        <methods>
+          <include name="OpenRequest"/>
+          <include name="setup"/>
+          <include name="SubmitResponseToRequester"/>
+          <include name="add_response"/>
+        </methods>
+      </class> <!-- expOActions_US_main.CI_CreateReq_AddResponses_Test -->
+    </classes>
+  </test> <!-- EXPActionsTest(failed) -->
+</suite> <!-- Failed suite [EXPActionsSuite] -->

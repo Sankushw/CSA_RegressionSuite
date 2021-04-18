@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>TestNG:  ShakeDownTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ShakeDownTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 13 16:09:53 IST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>640 seconds (640577 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T10_supp()'><b>T10_supp</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>43</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T11_OpenNewGreen()'><b>T11_OpenNewGreen</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>15</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T12_SupplierLogin()'><b>T12_SupplierLogin</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>27</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T13_OpenTheRequest()'><b>T13_OpenTheRequest</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>43</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T14_add_response()'><b>T14_add_response</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>83</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T15_Withdraw()'><b>T15_Withdraw</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>47</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T16_Reactivate()'><b>T16_Reactivate</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>28</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T17_Resubmit()'><b>T17_Resubmit</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>68</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T18_Reprice()'><b>T18_Reprice</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>33</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T1_RIPC_Login()'><b>T1_RIPC_Login</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>74</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T2_Create_Req()'><b>T2_Create_Req</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>6</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T3_skill_Req()'><b>T3_skill_Req</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>6</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T4_select_Req()'><b>T4_select_Req</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>62</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T5_select_jrss()'><b>T5_select_jrss</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>7</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T6_req_detail()'><b>T6_req_detail</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>22</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T7_skill_loc()'><b>T7_skill_loc</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>12</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T8_alert_check()'><b>T8_alert_check</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>0</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+<tr>
+<td title='shakeDown_US_main.Shakedown_CreateReq_AddResp_Test.T9_skill_price()'><b>T9_skill_price</b><br>Test class: shakeDown_US_main.Shakedown_CreateReq_AddResp_Test</td>
+<td></td>
+<td>6</td>
+<td>shakeDown_US_main.Shakedown_CreateReq_AddResp_Test@3c0ecd4b</td></tr>
+</table><p>
+</body>
+</html>

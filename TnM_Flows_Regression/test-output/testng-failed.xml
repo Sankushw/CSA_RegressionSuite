@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="fEEDBACK_US_Main.Createreq_Feedback_Submit_Test">
+        <methods>
+          <include name="T15_Feedback"/>
+          <include name="T7_skill_loc"/>
+          <include name="setup"/>
+          <include name="T8_alert_check"/>
+          <include name="T13_supplierlogin"/>
+          <include name="T1_RIPC_Login"/>
+          <include name="T10_SupllierSelection"/>
+          <include name="T3_skill_Req"/>
+          <include name="T14_requestopening"/>
+          <include name="T9_skill_price"/>
+          <include name="T2_Create_Req"/>
+          <include name="T12_OpenNewGreen"/>
+          <include name="T4_select_Req"/>
+          <include name="T11_SubmitReq"/>
+          <include name="T5_select_jrss"/>
+          <include name="T6_req_detail"/>
+        </methods>
+      </class> <!-- fEEDBACK_US_Main.Createreq_Feedback_Submit_Test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

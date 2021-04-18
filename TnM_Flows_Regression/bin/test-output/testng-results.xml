@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="my sample Suite" duration-ms="35006" started-at="2015-03-18T07:05:49Z" finished-at="2015-03-18T07:06:24Z">
+    <groups>
+    </groups>
+    <test name="Initializing and closing statements" duration-ms="39" started-at="2015-03-18T07:05:49Z" finished-at="2015-03-18T07:05:49Z">
+    </test> <!-- Initializing and closing statements -->
+    <test name="Test1" duration-ms="34919" started-at="2015-03-18T07:05:49Z" finished-at="2015-03-18T07:06:24Z">
+      <class name="standard.Initanddestroy">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:standard.Initanddestroy@795244e2]" name="initialize" is-config="true" duration-ms="13560" started-at="2015-03-18T12:35:35Z" finished-at="2015-03-18T12:35:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="destroy_case()[pri:0, instance:standard.Initanddestroy@795244e2]" name="destroy_case" is-config="true" duration-ms="753" started-at="2015-03-18T12:36:24Z" finished-at="2015-03-18T12:36:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy_case -->
+      </class> <!-- standard.Initanddestroy -->
+      <class name="standard.CustomerManagement">
+        <test-method status="FAIL" signature="CreateCustomer()[pri:0, instance:standard.CustomerManagement@7b5104e9]" name="CreateCustomer" duration-ms="34871" started-at="2015-03-18T12:35:49Z" finished-at="2015-03-18T12:36:24Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[Unable to locate frame: content
+Command duration or timeout: 30.31 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'ADMINIB-8DBPPIE', ip: '9.122.235.227', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 4228dade-bb9b-4094-be6e-b63f2e02a42e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.5.0}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: Unable to locate frame: content
+Command duration or timeout: 30.31 seconds
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'ADMINIB-8DBPPIE', ip: '9.122.235.227', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Session ID: 4228dade-bb9b-4094-be6e-b63f2e02a42e
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, webStorageEnabled=true, nativeEvents=false, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=31.5.0}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:86)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:58)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:542)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:866)
+	at com.O2O.Library.Library.customerManagementLink(Library.java:56)
+	at standard.CustomerManagement.CreateCustomer(CustomerManagement.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate frame: content
+Build info: version: '2.42.2', revision: '6a6995d', time: '2014-06-03 17:42:30'
+System info: host: 'ADMINIB-8DBPPIE', ip: '9.122.235.227', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.switchToFrame(file:///C:/Users/IBM_AD~1/AppData/Local/Temp/anonymous7151901243783770412webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9539:5)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/IBM_AD~1/AppData/Local/Temp/anonymous7151901243783770412webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:11455:16)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/IBM_AD~1/AppData/Local/Temp/anonymous7151901243783770412webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:407:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+      </class> <!-- standard.CustomerManagement -->
+    </test> <!-- Test1 -->
+  </suite> <!-- my sample Suite -->
+</testng-results>

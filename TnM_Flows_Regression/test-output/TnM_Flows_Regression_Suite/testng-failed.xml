@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [TnM_Flows_Regression_Suite]" parallel="tests">
+  <test name="FlowDown(failed)" parallel="tests">
+    <classes>
+      <class name="FlowDownTermsReview_Main_US.CI_FlowDown_CreateRequest_AddResponse_Test">
+        <methods>
+          <include name="T20_SupplierLogin"/>
+          <include name="T23_add_responses_FlowDown_Yes_Case"/>
+          <include name="T28_SubmitResponses_FlowDown_No_Case"/>
+          <include name="T3_FlowDown_Y_Select_ReqType"/>
+          <include name="T8_FlowDown_Y_skill_price"/>
+          <include name="Close"/>
+          <include name="T11_FlowDown_N_Create_Req"/>
+          <include name="setup"/>
+          <include name="T15_FlowDown_N_req_detail"/>
+          <include name="T17_FlowDown_N_skill_price"/>
+          <include name="T21_OpenRequest_FlowDown_Yes_Case"/>
+          <include name="T6_FlowDown_Y_req_detail"/>
+          <include name="T16_FlowDown_N_skill_loc"/>
+          <include name="T2_FlowDown_Y_Create_Req"/>
+          <include name="T27_add_responses_FlowDown_No_Case"/>
+          <include name="T1_RIPC_Login"/>
+          <include name="T4_FlowDown_Y_select_Requester"/>
+          <include name="T7_FlowDown_Y_skill_loc"/>
+          <include name="T9_FlowDown_Y_supp"/>
+          <include name="T26_OpenRequest_FlowDown_No_Case"/>
+          <include name="T13_FlowDown_N_select_Requester"/>
+          <include name="T14_FlowDown_N_select_jrss"/>
+          <include name="T12_FlowDown_N_Select_ReqType"/>
+          <include name="T24_SubmitResponses_FlowDown_Yes_Case"/>
+          <include name="T22_MinimizeSurveyPopUp"/>
+          <include name="T25_MoveToDashBoardPage"/>
+          <include name="T19_OpenNewGreen"/>
+          <include name="T5_FlowDown_Y_select_jrss"/>
+          <include name="T18_FlowDown_N_supp"/>
+          <include name="T10_ClickOnHomePage"/>
+        </methods>
+      </class> <!-- FlowDownTermsReview_Main_US.CI_FlowDown_CreateRequest_AddResponse_Test -->
+      <class name="shakeDown_US_main.Shakedown_CreateReq_AddResp_Test">
+        <methods>
+          <include name="Close"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- shakeDown_US_main.Shakedown_CreateReq_AddResp_Test -->
+      <class name="AdvancedSearch_US_main.AdvancedSearch_main_Green_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- AdvancedSearch_US_main.AdvancedSearch_main_Green_Test -->
+      <class name="nonPriced_US_main.CI_NonPriced_CreateReq_AddResp_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- nonPriced_US_main.CI_NonPriced_CreateReq_AddResp_Test -->
+      <class name="expOActions_US_main.CI_Exp_CreateReq_AddResponses_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="Close"/>
+        </methods>
+      </class> <!-- expOActions_US_main.CI_Exp_CreateReq_AddResponses_Test -->
+    </classes>
+  </test> <!-- FlowDown(failed) -->
+</suite> <!-- Failed suite [TnM_Flows_Regression_Suite] -->

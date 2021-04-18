@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [my sample Suite]">
+  <listeners>
+    <listener class-name="Util.TestsListenerAdapter"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="standard.CustomerManagement">
+        <methods>
+          <include name="CreateCustomer"/>
+        </methods>
+      </class> <!-- standard.CustomerManagement -->
+      <class name="standard.Initanddestroy">
+        <methods>
+          <include name="destroy_case"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- standard.Initanddestroy -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [my sample Suite] -->
